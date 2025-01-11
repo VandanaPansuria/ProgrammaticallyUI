@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="172" id="vQs-cB-cYV" customClass="FeedCell" customModule="autodynamic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vQs-cB-cYV" id="lOd-tt-rEm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmo-VY-fe4">
+                        <rect key="frame" x="16" y="16" width="288" height="18.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Quotes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyM-yW-YUg">
+                        <rect key="frame" x="16" y="136.66666666666666" width="288" height="19.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asriel" translatesAutoresizingMaskIntoConstraints="NO" id="qpE-zX-Ypu">
+                        <rect key="frame" x="16" y="50.666666666666657" width="70" height="70"/>
+                        <color key="backgroundColor" red="1" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="YM9-B6-FJp"/>
+                            <constraint firstAttribute="height" constant="70" id="dBr-pJ-OEe"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Vmo-VY-fe4" secondAttribute="trailing" constant="16" id="3bB-I3-Qdp"/>
+                    <constraint firstItem="qpE-zX-Ypu" firstAttribute="leading" secondItem="lOd-tt-rEm" secondAttribute="leading" constant="16" id="88U-Sn-rNv"/>
+                    <constraint firstItem="Vmo-VY-fe4" firstAttribute="top" secondItem="lOd-tt-rEm" secondAttribute="top" constant="16" id="By3-C3-hES"/>
+                    <constraint firstAttribute="trailing" secondItem="PyM-yW-YUg" secondAttribute="trailing" constant="16" id="LUZ-mC-5as"/>
+                    <constraint firstItem="PyM-yW-YUg" firstAttribute="leading" secondItem="lOd-tt-rEm" secondAttribute="leading" constant="16" id="RUb-3v-Jxk"/>
+                    <constraint firstAttribute="bottom" secondItem="PyM-yW-YUg" secondAttribute="bottom" constant="16" id="Yh2-E5-nYE"/>
+                    <constraint firstItem="PyM-yW-YUg" firstAttribute="top" secondItem="qpE-zX-Ypu" secondAttribute="bottom" constant="16" id="Zw5-WR-QRx"/>
+                    <constraint firstItem="qpE-zX-Ypu" firstAttribute="top" secondItem="Vmo-VY-fe4" secondAttribute="bottom" constant="16" id="cIq-Np-lE9"/>
+                    <constraint firstItem="Vmo-VY-fe4" firstAttribute="leading" secondItem="lOd-tt-rEm" secondAttribute="leading" constant="16" id="ijl-bU-nXY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="wiY-hZ-Ivi"/>
+            <connections>
+                <outlet property="lblName" destination="PyM-yW-YUg" id="fAg-LK-URj"/>
+            </connections>
+            <point key="canvasLocation" x="80" y="115.14242878560721"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Asriel" width="100" height="100"/>
+    </resources>
+</document>
